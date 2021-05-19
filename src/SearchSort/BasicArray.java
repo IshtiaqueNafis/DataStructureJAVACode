@@ -8,7 +8,7 @@ public class BasicArray {
     public BasicArray(int size) {
         this.size = size;
         this.numOfItems = 0; // will start at 0
-       arrayData  = new int[numOfItems];// this will limit number of items;
+       arrayData  = new int[size];// this will limit number of items;
     }
 
     public boolean AddItem(int item){
@@ -28,19 +28,20 @@ public class BasicArray {
         System.out.println("");
     }
 
-    public int BinarySearch(int valueToFind){
+    public int BinarySearchAscendingOrder(int valueToFind){
         var left = 0; // starting point
         var right = numOfItems-1; // high is in the
         var mid = 0; // will be 0 in the begining
-        while(left<right){
+        while(left<=right){
             // if let is less than right keep going on with the loop
             mid =  (left+right)/2; // mid is the value between 2 values
             if (arrayData[mid]==valueToFind) return mid; // this returns the mid.
-            else if(valueToFind<arrayData[mid]) right = mid-1; // this add plus one to right moving right
-            else left = mid + 1;
+            else if(valueToFind<arrayData[mid]) left = mid+1; // this add plus one to right moving right
+            else right = mid - 1;
         }
         return -1;
     }
+
 
 
 }
