@@ -1,27 +1,25 @@
 package com.company;
 
+import InsertionSort.InSertionSortArray;
 import SelectionSort.ArrayCrud;
 
 public class Main {
 
     public static void main(String[] args) {
 
-  var arrayOperation = new ArrayCrud(10);
+  var a = new InSertionSortArray(6);
+  a.addItem(5);
+  a.addItem(4);
+  a.addItem(10);
+  a.addItem(1);
+  a.addItem(6);
+  a.addItem(2);
+        System.out.println(  a.PrintItems());
+   a.InsertionSortDecending();
+        System.out.println(  a.PrintItems());
+   System.out.println(a.toString());
 
-   arrayOperation.addItem(32);
-   arrayOperation.addItem(8);
-   arrayOperation.addItem(29);
-   arrayOperation.addItem(-6);
-   arrayOperation.addItem(17);
-   arrayOperation.addItem(32);
-   arrayOperation.addItem(3);
-   arrayOperation.addItem(8);
-   arrayOperation.addItem(5);
-   arrayOperation.addItem(23);
- arrayOperation.SortSectionDecendingOrder();
- System.out.println( arrayOperation.PrintItems());
- System.out.println("\n");
-     System.out.println(arrayOperation.BinarySearchDecendingSearch(99));
+
 
 
 
