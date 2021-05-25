@@ -48,7 +48,7 @@ public class ArrayCrud {
             }
             var temp = arrayData[startIndex];
             arrayData[startIndex] = arrayData[minArrayIndex];
-            arrayData[minArrayIndex] = temp;
+                                                                                                                                      arrayData[minArrayIndex] = temp;
         }
     }
 

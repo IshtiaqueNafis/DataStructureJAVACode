@@ -1,23 +1,38 @@
 package com.company;
 
-import InsertionSort.InSertionSortArray;
-import SelectionSort.ArrayCrud;
+import ArrayGeneric.UnOrderedArray;
 
 public class Main {
 
     public static void main(String[] args) {
 
-  var a = new InSertionSortArray(6);
-  a.addItem(5);
-  a.addItem(4);
-  a.addItem(10);
-  a.addItem(1);
-  a.addItem(6);
-  a.addItem(2);
-        System.out.println(  a.PrintItems());
-   a.InsertionSortDecending();
-        System.out.println(  a.PrintItems());
-   System.out.println(a.toString());
+var a = new UnOrderedArray(5);
+a.AddLast(1);
+a.AddLast(2);
+a.AddLast(3);
+a.AddLast(4);
+a.AddLast(5);
+
+System.out.println(a.PrintItems());
+a.InsertionSortASC();
+a.RemoveItem(1);
+System.out.println(a.PrintItems());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

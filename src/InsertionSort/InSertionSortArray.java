@@ -15,6 +15,7 @@ public class InSertionSortArray {
 
     public String PrintItems(){
         StringBuilder output = new StringBuilder();
+        output.append("here are the list:");
         for (int i = 0; i <numOfItems ; i++) {
             output.append(arrayData[i]).append("\n");
         }

@@ -190,5 +190,5 @@ item | Index
    - `while (hole>0 && arrayData[hole-1]>value)`
      - loop is no longer true anymore 
     
-*** Note if the code wants to be in deceonding sorting just switch up the condition *** 
+*** Note if the code wants to be in descending sorting just switch up the condition *** 
 `while (hole>0 && arrayData[hole-1]<value)`
