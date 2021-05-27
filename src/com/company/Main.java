@@ -1,22 +1,22 @@
 package com.company;
 
-import ArrayGeneric.UnOrderedArray;
+import com.company.ArrayCRUD.OrderedArray;
 
 public class Main {
 
     public static void main(String[] args) {
+       var a = new OrderedArray<>(Integer.class,5);
+       a.AddItemsInOrder(5);
+       a.AddItemsInOrder(4);
+       a.AddItemsInOrder(3);
+       a.AddItemsInOrder(2);
+       a.AddItemsInOrder(1);
 
-var a = new UnOrderedArray(5);
-a.AddLast(1);
-a.AddLast(2);
-a.AddLast(3);
-a.AddLast(4);
-a.AddLast(5);
+        System.out.println(a.PrintItems());
+        System.out.println(a.BinarySearchDecending(77));
 
-System.out.println(a.PrintItems());
-a.InsertionSortASC();
-a.RemoveItem(1);
-System.out.println(a.PrintItems());
+
+
 
 
 

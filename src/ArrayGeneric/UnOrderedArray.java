@@ -160,7 +160,7 @@ public void SelectionSortASC(){
         var index = linearSearch(item);
         if(index==-1) System.out.println("no match found removing will not be done");
         else {
-            for (int i = index;i<numOfItems-1;i++ ){
+            for (int i = index;i<numOfItems;i++ ){
                 m_array[i] = m_array[i+1];
             }
             numOfItems--;
